@@ -1,0 +1,166 @@
+<html>
+	<head>
+		<title>Score Card</title>
+		<link href="scorecardStyle.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+	<body>
+		<h1 class="header text-center"> <strong> Score Card</strong></h1>
+		<div class="table-responsive">
+			<table class="table table-condensed table-bordered">
+				<tr class="success text-center">
+					<th class="text-left">Hole</th>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+					<th class="text-uppercase"><strong>Front</strong></th>
+					<td>10</td>
+					<td>11</td>
+					<td>12</td>
+					<td>13</td>
+					<td>14</td>
+					<td>15</td>
+					<td>16</td>
+					<td>17</td>
+					<td>18</td>
+					<th class="text-uppercase">Back</th>
+					<th class="text-uppercase">Total</th>
+				</tr>
+				<tr id="tees" class="text-center" style="background-color: white; color: black;">
+					<td class="text-left"><strong>Tees</strong></td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td id="out"></td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td><input type="number" min="0" max="1000" /> </td>
+					<td id="in"></td>
+					<td id="total"></td>
+				</tr>
+				<tr class="danger text-center">
+					<td class="text-left"><strong>Men's Handicap</strong></td>
+					<td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td></td>	
+					<td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+                    <td><input type="number" min="0" max="18" /> </td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr id="par" class="text-center" style="background-color: rgb(175, 230, 245); color: rgb(0, 0, 0);">
+					<td class="text-left"><strong>Par</strong></td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td id="out"></td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td><input type="number" min="0" max="6" /> </td>
+					<td id="in"></td>
+					<td id="total"></td>
+				</tr>
+				<tr  class="score text-center">
+					<td class="text-left"><strong>Score</strong></td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td id="out"></td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td><input type="number" min="0" max="10" /> </td>
+					<td id="in"></td>
+					<td id="total"></td>
+				</tr>
+				<tr id="putts" class="text-center" style="background-color: white; color: black;">
+					<td class="text-left"><strong>Putts</strong></td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td id="out"></td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td><input type="number" min="0" max="5" /> </td>
+					<td id="in"></td>
+					<td id="total"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="btn-group">
+			<button class="btn btn-warning" id="button">Front</button>
+			<button class="btn btn-warning" id="button1">Back</button>
+			<button class="btn btn-warning" id="button2">TOTAL</button>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="./scorecard.js"></script>
+	</body>
+</html>
